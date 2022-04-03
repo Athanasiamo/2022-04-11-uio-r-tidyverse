@@ -246,62 +246,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-<div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
-  <h3>Git</h3>
-  <p>
-    Git is a version control system that lets you track who made changes
-    to what when and has options for easily updating a shared or public
-    version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
-    web browser (current versions of Chrome, Firefox or Safari,
-    or Internet Explorer version 9 or above).
-  </p>
-  <p>
-    You will need an account at <a href="https://github.com/">github.com</a>
-    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-    you to create a GitHub account if you don't have one already.
-    Please consider what personal information you'd like to reveal. For
-    example, you may want to review these
-    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-      <p>
-        Git should be installed on your computer as part of your Bash
-        install (described above).
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-macosx">macOS</h4>
-      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-      <p>
-        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
-        by downloading and running the most recent "mavericks" installer from
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-        After installing Git, there will not be anything in your <code>/Applications</code> folder,
-        as Git is a command line program.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo dnf install git</code>.
-      </p>
-    </div>
-  </div>
-</div> {% comment %} End of 'Git' section. {% endcomment %}
-
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -320,8 +264,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+        Please, also install Rtools, from <a href="https://cran.r-project.org/bin/windows/Rtools/rtools42/rtools.html">this link</a>.
+        <br>
         Note that if you have separate user and admin accounts, you should run the 
         installers as administrator (right-click on .exe file and select "Run as 
         administrator" instead of double-clicking). Otherwise problems may occur later, 
@@ -335,8 +279,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
     <div class="col-md-4">
@@ -346,8 +288,30 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
         you can use your package manager (e.g. for Debian/Ubuntu
         run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo dnf install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+        <code>sudo dnf install R</code>). 
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="rstudio">RStudio</h4>
+      <p>
+        Please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>, 
+        it is the user interface towards R, and is required for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="r-packages">R packages</h4>
+      <p>
+        Lastly, you will need to install two packages to join the workshop,
+        namely the tidyverse and palmerpenguins packages.
+        You can do this by opening RStudio, and in the panel labelled "console"
+        (usually in the bottom left corner), type the following:
+        <code>
+          install.packages(c("tidyverse", "palmerpenguins"))
+        </code>
       </p>
     </div>
   </div>
