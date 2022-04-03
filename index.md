@@ -246,7 +246,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
+<div id="installs"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
   <p>
@@ -293,6 +293,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
   </div>
 
+ <h3>Additional installation requirements</h3>
   <div class="row">
     <div class="col-md-4">
       <h4 id="rstudio">RStudio</h4>
